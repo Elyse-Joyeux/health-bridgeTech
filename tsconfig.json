@@ -19,7 +19,6 @@
     "types": ["vite/client", "jest"]
   },
   "include": [
-    "health-bridgetech/apps/health-bridgetech/**/*",
-    "health-bridgetech/services/**/*"
+    "health-bridgetech/frontend/**/*"
   ]
 }
