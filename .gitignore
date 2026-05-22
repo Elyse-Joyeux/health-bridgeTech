@@ -1,20 +1,18 @@
-# ── Dependencies ──────────────────────────────────────────────────────────
+# Dependencies
 node_modules/
 **/node_modules/
 .pnpm-store/
 .npm
 .yarn
 
-# ── Bit ───────────────────────────────────────────────────────────────────
-.bit/
-.bitmap.local
-public/
+# Build output
 dist/
 build/
+.vite/
 **/dist/
 **/build/
 
-# ── Logs ──────────────────────────────────────────────────────────────────
+# Logs
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -22,7 +20,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# ── OS / editor ───────────────────────────────────────────────────────────
+# OS / editor
 .DS_Store
 Thumbs.db
 .idea/
@@ -30,21 +28,17 @@ Thumbs.db
 *.swp
 *.swo
 
-# ── Env / secrets ─────────────────────────────────────────────────────────
+# Env / secrets
 .env
 .env.local
 .env.*.local
 .env.development
 .env.production
 
-# ── Caches ────────────────────────────────────────────────────────────────
+# Caches
 .cache/
-.vite/
-.turbo/
-.next/
-.nuxt/
 coverage/
 *.tsbuildinfo
 
-# ── Repo clones (used by clone_repository tool) ───────────────────────────
+# VS Code repo state
 .repos/
