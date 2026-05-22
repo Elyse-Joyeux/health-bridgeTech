@@ -1,0 +1,400 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.topRow {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 22px;
+}
+
+.vitalityCard {
+  background: var(--hb-surface);
+  border-radius: var(--hb-radius);
+  padding: 28px;
+  box-shadow: var(--hb-shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.vitalityHead {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.vitalityEyebrow {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--hb-text-muted);
+  font-weight: 600;
+}
+
+.vitalityValue {
+  font-family: var(--hb-font-serif);
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.vitalityBody {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--hb-text-muted);
+  line-height: 1.55;
+  max-width: 420px;
+}
+
+.spark {
+  margin-top: 18px;
+  height: 90px;
+  position: relative;
+}
+
+.spark svg {
+  width: 100%;
+  height: 100%;
+}
+
+.statsRow {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.statLabel {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--hb-text-muted);
+  font-weight: 600;
+}
+
+.statValue {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.statBar {
+  height: 4px;
+  background: var(--hb-border-soft);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.statFill {
+  height: 100%;
+  background: var(--hb-primary);
+}
+
+.devicesCol {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.deviceCard {
+  background: var(--hb-surface);
+  border-radius: var(--hb-radius);
+  padding: 18px;
+  box-shadow: var(--hb-shadow-sm);
+}
+
+.deviceHead {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.deviceIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--hb-surface-2);
+  color: var(--hb-text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deviceName {
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+.deviceMeta {
+  font-size: 11px;
+  color: var(--hb-text-muted);
+}
+
+.deviceStatus {
+  margin-left: auto;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--hb-accent);
+}
+
+.deviceRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  border-top: 1px solid var(--hb-border-soft);
+}
+
+.deviceMetric {
+  display: flex;
+  flex-direction: column;
+}
+
+.deviceMetricLabel {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--hb-text-muted);
+}
+
+.deviceMetricVal {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--hb-font-serif);
+}
+
+.insightCard {
+  background: var(--hb-mint-pale);
+  border-radius: var(--hb-radius);
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border: 1px solid var(--hb-mint);
+}
+
+.insightLeft {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: var(--hb-primary);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.insightBody {
+  flex: 1;
+}
+
+.insightTitle {
+  font-family: var(--hb-font-serif);
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.insightCopy {
+  font-size: 13px;
+  color: var(--hb-text-muted);
+  line-height: 1.55;
+}
+
+.insightCopy strong {
+  color: var(--hb-accent);
+  font-weight: 600;
+}
+
+.insightBtn {
+  background: var(--hb-primary);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.midRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.metricCard {
+  background: var(--hb-surface);
+  border-radius: var(--hb-radius);
+  padding: 22px;
+  box-shadow: var(--hb-shadow-sm);
+}
+
+.metricHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.metricTitle {
+  font-family: var(--hb-font-serif);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.metricSub {
+  font-size: 10.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--hb-text-muted);
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.pageDots {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.pageDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--hb-border);
+}
+
+.pageDotOn {
+  background: var(--hb-primary);
+}
+
+.hrvChart {
+  height: 180px;
+  position: relative;
+  margin-top: 14px;
+}
+
+.hrvDays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: 8px;
+  font-size: 11px;
+  color: var(--hb-text-muted);
+}
+
+.hrvDay {
+  text-align: center;
+}
+
+.hrvDayActive {
+  color: var(--hb-text);
+  font-weight: 600;
+}
+
+.sleepRow {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.sleepItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sleepHead {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12.5px;
+  color: var(--hb-text);
+}
+
+.sleepName {
+  font-weight: 500;
+}
+
+.sleepVal {
+  font-weight: 600;
+}
+
+.sleepBar {
+  height: 6px;
+  background: var(--hb-border-soft);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.sleepFill {
+  height: 100%;
+  border-radius: 3px;
+}
+
+.sleepTip {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--hb-border-soft);
+  font-size: 12px;
+  color: var(--hb-text-muted);
+  line-height: 1.55;
+}
+
+.lastNight {
+  font-size: 12px;
+  color: var(--hb-primary);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.stressCard {
+  background: var(--hb-surface);
+  border-radius: var(--hb-radius);
+  padding: 22px;
+  box-shadow: var(--hb-shadow-sm);
+}
+
+.heatmap {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  gap: 3px;
+}
+
+.heatCell {
+  height: 16px;
+  border-radius: 3px;
+  background: var(--hb-mint-pale);
+}
+
+.heatRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--hb-text-muted);
+  margin-top: 10px;
+}
+
+.heatPeak {
+  color: #c14848;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 1080px) {
+  .topRow, .midRow {
+    grid-template-columns: 1fr;
+  }
+}

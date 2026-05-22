@@ -1,0 +1,50 @@
+# ── Dependencies ──────────────────────────────────────────────────────────
+node_modules/
+**/node_modules/
+.pnpm-store/
+.npm
+.yarn
+
+# ── Bit ───────────────────────────────────────────────────────────────────
+.bit/
+.bitmap.local
+public/
+dist/
+build/
+**/dist/
+**/build/
+
+# ── Logs ──────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ── OS / editor ───────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── Env / secrets ─────────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+
+# ── Caches ────────────────────────────────────────────────────────────────
+.cache/
+.vite/
+.turbo/
+.next/
+.nuxt/
+coverage/
+*.tsbuildinfo
+
+# ── Repo clones (used by clone_repository tool) ───────────────────────────
+.repos/
