@@ -13,7 +13,11 @@ export default defineConfig({
   server: {
     // Do NOT proxy `/api` — it would shadow source modules under our local `api/` folder.
     proxy: {
-      '/bridgetech-service': { target: BACKEND, changeOrigin: true },
+      '/bridgetech-service': {
+        target: BACKEND,
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/bridgetech-service/, ''),
+      },
     },
   },
 });
