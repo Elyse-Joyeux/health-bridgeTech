@@ -50,6 +50,7 @@
   font-weight: 600;
   color: var(--hb-primary);
   letter-spacing: -0.01em;
+  text-decoration: none;
 }
 
 .navLinks {
@@ -64,6 +65,7 @@
   font-weight: 500;
   cursor: pointer;
   position: relative;
+  text-decoration: none;
 }
 
 .navLink:hover {
@@ -213,6 +215,7 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  text-decoration: none;
 }
 
 .btnGhost:hover {
@@ -777,6 +780,7 @@
   color: var(--hb-text);
   padding: 6px 0;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .footerLink:hover {

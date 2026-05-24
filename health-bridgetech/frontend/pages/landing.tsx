@@ -6,10 +6,10 @@ import {
 } from '../components/icons.js';
 
 const FEATURES_NAV = [
-  { label: 'Features', active: true },
-  { label: 'Community' },
-  { label: 'Therapy' },
-  { label: 'Yoga & Music' },
+  { label: 'Features', to: '#features', active: true },
+  { label: 'Community', to: '/community' },
+  { label: 'Therapy', to: '/therapy' },
+  { label: 'Yoga & Music', to: '/meditation' },
 ];
 
 const MOODS = [
@@ -30,12 +30,13 @@ export function LandingPage() {
         </Link>
         <div className={styles.navLinks}>
           {FEATURES_NAV.map((n) => (
-            <span
+            <Link
               key={n.label}
+              to={n.to}
               className={`${styles.navLink} ${n.active ? styles.navLinkActive : ''}`}
             >
               {n.label}
-            </span>
+            </Link>
           ))}
         </div>
         <div className={styles.navRight}>
@@ -62,9 +63,9 @@ export function LandingPage() {
             <Link to="/signup" className={styles.btnPrimary}>
               Start Free Trial <ArrowRightIcon size={14} />
             </Link>
-            <button type="button" className={styles.btnGhost}>
+            <Link to="#features" className={styles.btnGhost}>
               How it Works <PlayIcon size={12} />
-            </button>
+            </Link>
           </div>
 
           <div className={styles.socialProof}>
@@ -94,7 +95,7 @@ export function LandingPage() {
         </div>
       </section>
 
-      <section className={styles.featuresSection}>
+      <section id="features" className={styles.featuresSection}>
         <div className={styles.sectionHead}>
           <h2 className={styles.sectionTitle}>Holistic tools for your wellbeing</h2>
           <p className={styles.sectionLead}>
@@ -239,35 +240,35 @@ export function LandingPage() {
 
           <div>
             <div className={styles.footerColTitle}>Platform</div>
-            <span className={styles.footerLink}>Features</span>
-            <span className={styles.footerLink}>Community</span>
-            <span className={styles.footerLink}>Yoga &amp; Music</span>
-            <span className={styles.footerLink}>AI Companion</span>
+            <Link to="#features" className={styles.footerLink}>Features</Link>
+            <Link to="/community" className={styles.footerLink}>Community</Link>
+            <Link to="/meditation" className={styles.footerLink}>Yoga &amp; Music</Link>
+            <Link to="/companion" className={styles.footerLink}>AI Companion</Link>
           </div>
 
           <div>
             <div className={styles.footerColTitle}>Resources</div>
-            <span className={styles.footerLink}>Help Center</span>
-            <span className={styles.footerLink}>Wellness Blog</span>
-            <span className={styles.footerLink}>Therapist Directory</span>
-            <span className={styles.footerLink}>Scientific Whitepaper</span>
+            <Link to="/resources" className={styles.footerLink}>Help Center</Link>
+            <Link to="/resources" className={styles.footerLink}>Wellness Blog</Link>
+            <Link to="/therapy" className={styles.footerLink}>Therapist Directory</Link>
+            <Link to="/resources" className={styles.footerLink}>Scientific Whitepaper</Link>
           </div>
 
           <div>
             <div className={styles.footerColTitle}>Connect</div>
-            <span className={styles.footerLink}>hello@bridgetech.io</span>
-            <span className={styles.footerLink}>Press kit</span>
-            <span className={styles.footerLink}>Partnerships</span>
-            <span className={styles.footerLink}>Careers</span>
+            <a href="mailto:hello@bridgetech.io" className={styles.footerLink}>hello@bridgetech.io</a>
+            <Link to="/resources" className={styles.footerLink}>Press kit</Link>
+            <Link to="/community" className={styles.footerLink}>Partnerships</Link>
+            <Link to="/community" className={styles.footerLink}>Careers</Link>
           </div>
         </div>
 
         <div className={styles.footerBottom}>
           <span>&copy; 2026 Health BridgeTech. All rights reserved.</span>
           <div className={styles.footerBottomLinks}>
-            <span className={styles.footerLink}>Privacy Policy</span>
-            <span className={styles.footerLink}>Terms of Service</span>
-            <span className={styles.footerLink}>Cookie Settings</span>
+            <Link to="/settings" className={styles.footerLink}>Privacy Policy</Link>
+            <Link to="/settings" className={styles.footerLink}>Terms of Service</Link>
+            <Link to="/settings" className={styles.footerLink}>Cookie Settings</Link>
           </div>
         </div>
       </footer>
