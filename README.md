@@ -29,6 +29,7 @@ npm run start:all
 ```
 
 Notes
+
 - `.env` is listed in `.gitignore` — do not commit secrets.
 - If you want a demo user inserted, run:
 
