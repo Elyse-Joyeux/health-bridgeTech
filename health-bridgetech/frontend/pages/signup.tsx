@@ -229,10 +229,10 @@ export function SignupPage() {
               onChange={(e) => setAgreed(e.target.checked)}
             />
             <div>
-              <strong>I am 18 years or older</strong>
+              <strong>I understand the account and consent requirements</strong>
               <span>
-                Our platform is designed for adults. If you are under 18, parental consent is
-                mandatory for participation in guided sessions and community features.
+                If I am under 18, I understand parental consent is required before guided
+                sessions and community features are unlocked.
               </span>
             </div>
           </label>
