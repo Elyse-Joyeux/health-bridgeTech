@@ -3,10 +3,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --config health-bridgetech/frontend/vite.config.js",
+    "dev": "concurrently \"npm run start:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "vite --config health-bridgetech/frontend/vite.config.js",
     "build": "vite build --config health-bridgetech/frontend/vite.config.js",
     "preview": "vite preview --config health-bridgetech/frontend/vite.config.js",
     "start:backend": "node health-bridgetech/backend/server.js",
+    "start:all": "npm run dev",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
@@ -32,7 +34,8 @@
     "@types/react-dom": "^19.0.8",
     "@vitejs/plugin-react": "^5.2.0",
     "typescript": "^5.5.4",
-    "vite": "^5.4.1"
+    "vite": "^5.4.1",
+    "concurrently": "^8.2.0"
   },
   "version": "1.0.0",
   "description": "",
